@@ -1,17 +1,15 @@
 [
 	{
-		"name": "Phasers",
-		"unitType": "Ranged",
-		"uniqueTo": "Aliens",
-		"replaces": "Machine Gun",
+		"name": "Heavy_Swordsman",
 		"movement": 2,
-		"strength": 90,
-		"rangedStrength": 36,
-		"range": 2,
-		"cost": 500,
-		"requiredTech": "Ballistics",
-		"requiredResource": "Uranium",
-		"promotions": ["Logistics","Accuracy I"],
-		"attackSound": "phasers"
+		"combat": 14,
+		"cost": 100,
+		"prereqTech": "Privateering",
+		"replaces": "Swordsman"
+		"upgradedUnit": "Long_Swordsman",
+		"domain": "Land",
+		"uniques": [
+			"Cannot be purchased"
+		]
 	}
 ]
