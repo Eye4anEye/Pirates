@@ -1,0 +1,24 @@
+[
+  {
+    "name": "PIRATES_OF_NASSAU",
+    "description": "All naval units gain the Privateer promotion. Naval units have no maintenance costs and yield gold upon destroying an enemy unit.",
+    "effects": [
+      {
+        "name": "GrantFreePromotionToUnitType",
+        "type": "NAVAL",
+        "promotion": "Privateer"
+      },
+      {
+        "name": "NoMaintenanceForUnitType",
+        "type": "NAVAL"
+      },
+      {
+        "name": "YieldGoldOnKillUnitType",
+        "type": "NAVAL",
+        "yields": [
+          {"type": "GOLD", "amount": 100}
+        ]
+      }
+    ]
+  }
+]
