@@ -1,15 +1,102 @@
-[
-	{
-		"name": "Heavy_Swordsman",
-		"movement": 2,
-		"combat": 14,
-		"cost": 100,
-		"prereqTech": "Privateering",
-		"replaces": "Swordsman"
-		"upgradedUnit": "Long_Swordsman",
-		"domain": "Land",
-		"uniques": [
-			"Cannot be purchased"
-		]
-	}
-]
+  {
+    "name": "CORSAIR_SLOOP",
+    "uniqueTo": "Pirates of Nassau",
+    "replacesUnit": "Galleass",
+    "unitType": "NAVAL",
+    "cost": 80,
+    "movement": 4, 
+    "combatStrength": 10,
+    "canCaptureShips": true,
+    "iconName": "CorsairSloopIcon",
+    "unique": "Has a [33]% chance to capture a defeated enemy naval unit"
+  },
+  {
+    "name": "FLYING_DUTCHMAN",
+    "uniqueTo": "The Pirate Republic",
+    "replacesUnit": "Privateer",
+    "unitType": "NAVAL",
+    "cost": 150,
+    "movement": 5, 
+    "combatStrength": 25,
+    "canCaptureShips": true,
+    "iconName": "FlyingDutchmanIcon",
+    "unique": "Has a [50]% chance to capture a defeated enemy naval unit"
+  },
+  {
+    "name": "BLACK_FLAG_FLEET",
+    "uniqueTo": "The Pirate Republic",
+    "replacesUnit": "Destroyer",
+    "unitType": "NAVAL",
+    "cost": 500,
+    "movement": 6, 
+    "combatStrength": 85,
+    "rangedCombatStrength": 95,
+    "range": 2,
+    "canCaptureShips": true,
+    "iconName": "BlackFlagFleetIcon",
+    "unique": [
+      "Has a [100]% chance to capture a defeated enemy naval unit",
+      "Increases the Gold gained from capturing a city by [100]"]
+  },
+  {
+  "faction_name": "Adaptive Specialists",
+  "unique_units": [
+    {
+      "unit_id": "PIRATE_RAIDERS",
+      "game_phase": "Early Game",
+      "name": "Scavenger Corps",
+      "base_unit_type": "Infantry",
+      "production_cost": 50,
+      "base_stats": {
+        "attack": 12,
+        "defense": 8,
+        "movement": 2
+      },
+      "unique_mechanic": {
+        "type": "Resource_Raid",
+        "description": "Deals +50% bonus damage against non-military structures (e.g., mines, lumber camps, outposts). Weakened in combat vs. standard military units.",
+        "ability_name": "Opportunistic Acquisition",
+        "ability_effect": "On defeating an enemy military unit, immediately grants a one-time bonus of 5 food and 5 wood."
+      },
+      "role": "Early aggressive scouts and resource raiders."
+    },
+    {
+      "unit_id": "PIRATE_ENGINEERS",
+      "game_phase": "Mid Game",
+      "name": "Mobile Engineers",
+      "base_unit_type": "Support/Siege",
+      "production_cost": 150,
+      "base_stats": {
+        "attack": 0,
+        "defense": 15,
+        "movement": 3
+      },
+      "unique_mechanic": {
+        "type": "Expedient_Defense",
+        "description": "Highly resistant to Ranged Damage (-40% damage taken from all ranged sources). Cannot attack enemy units.",
+        "ability_name": "Expedient Fortification",
+        "ability_effect": "Can instantly construct a temporary, short defensive wall or trench section (lasts 60 seconds). All nearby friendly units gain -10% resource cost on artillery and defensive tower construction."
+      },
+      "role": "Flexible support for forward defense and line reinforcement."
+    },
+    {
+      "unit_id": "PIRATE_ARTILLERY",
+      "game_phase": "Late Game",
+      "name": "Aether-Kinetic Artillery",
+      "base_unit_type": "Artillery",
+      "production_cost": 350,
+      "base_stats": {
+        "attack": 50,
+        "defense": 10,
+        "movement": 1
+      },
+      "unique_mechanic": {
+        "type": "Area_Denial",
+        "description": "Fires a slow-moving energy projectile that creates an Area of Effect (AoE) disruption zone upon impact. Long setup time before firing.",
+        "ability_name": "Disruption Field",
+        "ability_effect": "The AoE impact zone lingers for 15 seconds, slowing the attack speed and movement speed of ALL units (friend or foe) within it by 25%."
+      },
+      "role": "High-tech, area-denial siege and zone control."
+    }
+  ]
+}
