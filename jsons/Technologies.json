@@ -1,0 +1,11 @@
+[
+  {
+    "name": "Privateering",
+    "era": "Medieval",
+    "cost": 500,
+    "requiredTechs": ["Astronomy", "MetalCasting"],
+    "uniques": [
+      "[2] free randomn researchable Tech(s) from the [Medieval era]"
+    ]
+  }
+]
